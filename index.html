@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age in days</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="box">
+        <div class="container">
+            <h1>Challenge-1: Your Age in days</h1>
+            <br>
+            <div class="down">
+                <button class="btn blue" onclick="cal()">Click</button>
+                <button class="btn red" onclick="reset()">Reset</button>
+            </div>
+            <div class="res">
+                <span>Your Age is: </span>
+                <u style="color: red;"><span id="result"></span></u>
+                <span> in days</span>
+                
+            </div>
+        </div>
+        <div class="container">
+            <h1>Challenge-2: Cat Generator</h1>
+            <br>
+            <div>
+                <button class="btn blue" onclick="generate()">Generate</button>
+                <button class="btn red" onclick="del()">Clear</button>
+            </div>
+            <div class="flex-box" id="flex-gen">
+            </div>
+        </div>
+        <div class="container">
+            <h1>Challenge-3: Rock Paper Scissor Game</h1>
+            <br>
+            <div id="game">
+                <img class="item" id="rock" src="http://images.clipartpanda.com/rock-clipart-alpine-landscape-rock-rubble-01b-al1.png" alt="Rock" onclick="rpsGame(this)">
+                <img class="item" id="paper" src="https://i.pinimg.com/originals/2c/ff/0f/2cff0f357f2341446857f7f5b350c114.jpg" alt="Paper" onclick="rpsGame(this)">
+                <img class="item" id="scissor" src="scissor.jpg" alt="Scissor" onclick="rpsGame(this)">
+            </div>
+        </div>
+        <div class="container">
+            <h1>Challenge-4: Change the color of all buttons!</h1>
+            <br>
+            <div id="change">
+                <select name="Choose" id="choose" onchange="backgroundchange(this)">
+                    <option value="Choose any colour">Choose any colour</option>
+                    <option value="reset">Reset</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                    <option value="orange">Orange</option>
+                    <option value="random">Random</option>
+                </select>
+                <button class="btn pink">Google</button>
+                <button class="btn blue">Facebook</button>
+                <button class="btn orange">Amazon</button>
+                <button class="btn green">Flipkart</button>
+                <button class="btn red">Netflix</button>
+            </div>
+        </div>
+
+        <!-- Black Jack game -->
+        <div class="container">
+            <h1>Challenge-5: BlackJack Game</h1>
+            <h2 id="top_msg">Let's Play</h2>
+            <div id="black_box">
+                <div id="first_row">
+                    <div id="my_box">
+                        <span id="my_score">You: 0</span>
+                        <div class="cards" id="human_card">
+                            
+                        </div>
+                    </div>
+                    <div id="bot_box">
+                        <span id="bot_score">Dealer: 0</span>
+                        <div class="cards" id="bot_card">
+    
+                        </div>
+                    </div>
+                </div>
+                <div id="second_row">
+                    <button class="btn green" id="hit_btn">Hit</button>
+                    <button class="btn orange" id="stand_btn">Stand</button>
+                    <button class="btn red" id="deal_btn">Deal</button>
+                </div>
+                <div id="third_row">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Win</th>
+                                <th>Losses</th>
+                                <th>Draw</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span id="win">0</span>
+                                </td>
+                                <td>
+                                    <span id="lose">0</span>
+                                </td>
+                                <td>
+                                    <span id="draw">0</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>            
+        </div>
+    </div>
+    <script src="brain.js"></script>
+</body>
+</html>

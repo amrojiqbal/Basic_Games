@@ -1,0 +1,197 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Yusei Magic', sans-serif;
+}
+body{
+
+    /* background-color: aqua; */
+}
+.box{
+    top: 0px;
+    width: 100%;
+    /* height: 100vh; */
+}
+.container{
+    background-color: #bab2e7;
+    margin: 5px auto;
+    /* margin-bottom: 5px; */
+    width: 65%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    
+    border-top-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+h1{
+    /* color: red; */
+}
+.down{
+    /* margin-top: 10px; */
+    padding: 10px;
+    /* border: 2px solid black; */
+    /* width: 20vw; */
+}
+.btn{
+    font-size: 25px;
+    padding: 8px 10px;
+    margin: 10px;
+    border: 2px solid #e9e8ed ;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+
+}
+/* // color */
+.blue{
+    background-color: rgb(50, 50, 190);
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
+.orange{
+    background-color: orange;
+}
+.pink{
+    background-color: #e12ed3;
+}
+
+.btn:hover{
+    background-color: black;
+}
+.res span{
+    /* color: cadetblue; */
+    font-size: 23px;
+    font-weight: bold;
+}
+#result{
+    color: red;
+}
+
+.flex-box{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+img{
+    /* border:1px solid black ; */
+    width: 200px;
+    margin: 10px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 10px 2px black;
+}
+#game{
+    display: flex;
+    width: 100%;
+    /* flex-direction: column; */
+    justify-content: space-between;
+}
+.item{
+    width: 265px;
+    height: 240px;
+    margin: 20px;
+    cursor: pointer;
+}
+.item:hover{
+    box-shadow:2px 2px 29px 7px blue;
+}
+
+.msg{
+    font-size: 65px;
+    font-weight: bold;
+    text-align: center;
+    padding: auto 0px;
+}
+#human{
+    box-shadow:2px 2px 29px 7px blue;
+}
+#bot{
+    box-shadow:2px 2px 29px 7px red;
+}
+#txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#change{
+    
+    display: flex;
+    margin: 15px;
+    width: 85%;
+    justify-content: space-around;
+    align-items: center;
+}
+#choose{
+    padding: 5px;
+    width: 110px;
+    /* height: 30px; */
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+/* Black jack CSS */
+
+#black_box , #first_row , #third_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    background-color: green;
+    width: 100%;
+}
+#black_box{
+    flex-direction: column;
+}
+#top_msg{
+    margin: 10px;
+}
+#my_box , #bot_box{
+    padding: 5px;
+    text-align: center;
+    width: 50%;
+    border: 2px solid black;
+    height: 540px;
+}
+#my_score, #bot_score{
+    font-size: 40px;
+    color: white;
+} 
+#second_row{
+    margin: 10px;
+    border: 2px solid black;
+}
+table{
+    width: 40%;
+    height: 100px;
+    color: white;
+    text-align: center;
+}
+th{
+    color: #590808;
+}
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    font-size: 20px;
+}
+  
+th, td{
+    padding: 5px;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.cards img{
+    width: 120px;
+}
