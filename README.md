@@ -1,4 +1,9 @@
 # Basic_Games
+
+This webpage is full responsive so it is suitable for mobile as well as PC
+
+
+
 This contains 5 games
 GAME - 1 AGE IN DAYS        
 this will calculate your age in days.
