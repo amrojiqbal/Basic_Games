@@ -27,14 +27,8 @@ body{
     border-top-left-radius: 18px;
     border-bottom-right-radius: 18px;
 }
-h1{
-    /* color: red; */
-}
 .down{
-    /* margin-top: 10px; */
     padding: 10px;
-    /* border: 2px solid black; */
-    /* width: 20vw; */
 }
 .btn{
     font-size: 25px;
@@ -213,24 +207,13 @@ th, td{
     h1{
         font-size: 24px;
     }
-    /* .container{
-        width: 80%;
-    } */
     .btn{
         font-size: 18px;
         padding: 5px;
     }
-    /* 
-    /* .item{
-        width: 50%;
-        height: 40%;
-    } */
     .msg{
         font-size: 35px;
     }
-    /* #first_row{
-        flex-direction: column;
-    } */
     #choose{
         padding: 0px;
         width: 80px;
@@ -255,17 +238,22 @@ th, td{
     
 }
 @media only screen and (max-width: 850px){
-    #first_row{
-        flex-direction: column;
-    }
     #my_box, #bot_box{
         width: 80%;
     }
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 820px){
+    #first_row{
+        flex-direction: column;
+    }
     #my_box, #bot_box{
         width: 90%;
+        height: 450px;
     }
+}
+
+@media only screen and (max-width: 600px){
+    
     h1{
         font-size: 20px;
     }
@@ -273,7 +261,7 @@ th, td{
         font-size: 20px;
     }
 }
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 430px){
     .item{
         width: 150px;
         height: 120px;
@@ -291,5 +279,8 @@ th, td{
     }
     img{
         width: 170px;
+    }
+    .container{
+        width: 90%;
     }
 }
