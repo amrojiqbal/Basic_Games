@@ -42,14 +42,30 @@ function rpsGame(yourchoice) {
     let content = document.getElementById('game');
     content.innerHTML = null;
 
-    let human = document.createElement('div');
+    // let human = document.createElement('div');
+    // let bot = document.createElement('div');
+
+    let human=document.createElement('img');
+    human.setAttribute('class','item');
+    human.setAttribute('id','human');
+    human.src=humanchoice.src;
+
+    let bot=document.createElement('img');
+    bot.setAttribute('class','item');
+    bot.setAttribute('id','bot');
+    bot.src=botchoice.src;
+    
+    // let human = <img class='item' id='human' src= "humanchoice.src"  height="180px"></img>;
+
+
+    /* let bot = <img class='item' id='bot' src='" + botchoice.src + "' height="180px" >; */
+
+    
     let text = document.createElement('div');
-    let bot = document.createElement('div');
     text.setAttribute('id', 'txt');
 
-    human.innerHTML = "<img class='item' id='human' src='" + humanchoice.src + "' height=180px >";
-    bot.innerHTML = "<img class='item' id='bot' src='" + botchoice.src + "' height=180px >";
-    text.innerHTML = "<p class='msg' style='color: " + result['color'] + ";'>" + result['message'] + "</p> <button class='btn green' onclick='playagain()'>Play Again</button>";
+
+    text.innerHTML = `<p class='msg' style="color: ${result['color']};" > ${result['message']} </p> <button class='btn green' onclick='playagain()'>Play Again</button>`;
 
 
     content.append(human);
@@ -68,7 +84,7 @@ function random() {
 function playagain() {
     // console.log(document.getElementById('rock'));
     let cont = document.getElementById('game');
-    cont.innerHTML = '<img class="item" id="rock" src="http://images.clipartpanda.com/rock-clipart-alpine-landscape-rock-rubble-01b-al1.png" alt="Rock" onclick="rpsGame(this)"> <img class="item" id="paper" src="https://i.pinimg.com/originals/2c/ff/0f/2cff0f357f2341446857f7f5b350c114.jpg" alt="Paper" onclick="rpsGame(this)"> <img class="item" id="scissor" src="scissor.jpg" alt="Scissor" onclick="rpsGame(this)">';
+    cont.innerHTML = '<img class="item" id="rock" src="rock.png" alt="Rock" onclick="rpsGame(this)"> <img class="item" id="paper" src="paper.jpg" alt="Paper" onclick="rpsGame(this)"> <img class="item" id="scissor" src="scissor.jpg" alt="Scissor" onclick="rpsGame(this)">';
 
 }
 

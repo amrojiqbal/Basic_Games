@@ -92,11 +92,14 @@ img{
     display: flex;
     width: 100%;
     /* flex-direction: column; */
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center
 }
 .item{
-    width: 265px;
-    height: 240px;
+    width: 200px;
+    height: 190px;
+    /* height: 240px; */
     margin: 20px;
     cursor: pointer;
 }
@@ -129,6 +132,7 @@ img{
     width: 85%;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 #choose{
     padding: 5px;
@@ -148,6 +152,9 @@ img{
     background-color: green;
     width: 100%;
 }
+/* #first_row{
+    flex-wrap: wrap;
+} */
 #black_box{
     flex-direction: column;
 }
@@ -189,9 +196,100 @@ th, td{
 }
 .cards{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 
 }
 .cards img{
     width: 120px;
+}
+
+
+@media screen and (max-width: 1200px){
+    body{
+        background-color: black;
+    }
+    h1{
+        font-size: 24px;
+    }
+    /* .container{
+        width: 80%;
+    } */
+    .btn{
+        font-size: 18px;
+        padding: 5px;
+    }
+    /* 
+    /* .item{
+        width: 50%;
+        height: 40%;
+    } */
+    .msg{
+        font-size: 35px;
+    }
+    /* #first_row{
+        flex-direction: column;
+    } */
+    #choose{
+        padding: 0px;
+        width: 80px;
+        font-size: 15px;
+    }
+
+    #my_score, #bot_score{
+        font-size: 30px;
+    }
+    .cards img{
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 1150px){
+    #game{
+        /* flex-wrap: wrap; */
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+}
+@media only screen and (max-width: 850px){
+    #first_row{
+        flex-direction: column;
+    }
+    #my_box, #bot_box{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 600px){
+    #my_box, #bot_box{
+        width: 90%;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .res span{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 400px){
+    .item{
+        width: 150px;
+        height: 120px;
+    }
+    .res span{
+        font-size: 18px;
+    }
+    
+    #my_score, #bot_score{
+        font-size: 20px;
+    }
+    #second_row{
+        display: flex;
+        flex-direction: column;
+    }
+    img{
+        width: 170px;
+    }
 }
