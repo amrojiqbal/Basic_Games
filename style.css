@@ -275,7 +275,9 @@ th, td{
     }
     #second_row{
         display: flex;
-        flex-direction: column;
+    }
+    .btn{
+        margin: 5px;
     }
     img{
         width: 170px;
