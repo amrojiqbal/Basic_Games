@@ -3,10 +3,7 @@
     padding: 0px;
     font-family: 'Yusei Magic', sans-serif;
 }
-body{
 
-    /* background-color: aqua; */
-}
 .box{
     top: 0px;
     width: 100%;
@@ -61,7 +58,6 @@ body{
     background-color: black;
 }
 .res span{
-    /* color: cadetblue; */
     font-size: 23px;
     font-weight: bold;
 }
@@ -76,7 +72,6 @@ body{
 
 }
 img{
-    /* border:1px solid black ; */
     width: 200px;
     margin: 10px;
     border: 2px solid black;
@@ -85,7 +80,6 @@ img{
 #game{
     display: flex;
     width: 100%;
-    /* flex-direction: column; */
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center
@@ -93,7 +87,6 @@ img{
 .item{
     width: 200px;
     height: 190px;
-    /* height: 240px; */
     margin: 20px;
     cursor: pointer;
 }
@@ -131,7 +124,6 @@ img{
 #choose{
     padding: 5px;
     width: 110px;
-    /* height: 30px; */
     border-radius: 5px;
     font-size: 20px;
 }
@@ -146,9 +138,6 @@ img{
     background-color: green;
     width: 100%;
 }
-/* #first_row{
-    flex-wrap: wrap;
-} */
 #black_box{
     flex-direction: column;
 }
